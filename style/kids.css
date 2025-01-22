@@ -103,47 +103,142 @@ header {
 .button .menubar {
   display: none;
   border: none;
-  background: none;
+  outline: none;
+  background: transparent;
   cursor: pointer;
   font-size: 1.5rem;
+  color: #111111;
+}
+
+/* banner section styles */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section,
+.banner {
+  margin-top: 1.25rem;
+}
+.banner .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.02rem;
+}
+
+.banner .hero .title h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #111111;
+}
+.banner .hero .title h1 .empower {
+  color: #fea301;
+}
+
+.banner .hero .title h1 .toword {
+  color: #01acfd;
+}
+.banner .hero .title p {
+  font-size: 1.25rem;
+  color: #111111;
+  line-height: auto;
+  margin-top: 1.25rem;
+}
+
+.banner .hero .title .enrol .hero_btn {
+  padding: 10px 10px;
+  background-color: #111111;
+  color: #ffffff;
+  width: 190px;
+  height: 50px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
 }
 
 /*~~~~~~ media query for mobile device responsive design ~~~~~~~*/
-
-/* for mobile devise */
-@media screen and (max-width: 768px) {
-  .button,
-  .btn {
-    display: block;
+@media screen and (max-width: 1024px) {
+  .menubar {
+    display: none;
   }
+}
+
+@media screen and (max-width: 768px) {
   .menubar {
     display: block;
+    top: 0;
+    left: 0;
+    /* margin-inline-end: -90%; */
   }
-
-  .nav_links {
+  .inner_header > button {
+    margin-left: 60%;
+  }
+  .logo h1 {
     display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 100%;
-    background: #fff;
-    flex-direction: column;
   }
-
   .nav_links ul {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .menubar {
+    outline: none;
+    border: none;
+    color: #111111;
+    background: transparent;
+    cursor: pointer;
+    width: 1.85rem;
+    height: 1.85rem;
+  }
+  div .line {
+    width: 390px;
+    height: 70px;
+    background-color: #fea301;
   }
 
-  .nav_links,
-  .li_items {
+  .banner,
+  .hero {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  .banner,
+  .hero,
+  .img_title {
+    padding: 0 auto;
+  }
+
+  .banner .hero .title h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #111111;
     text-align: center;
-    padding: 10px 0;
   }
 
-  .nav_links {
-    display: flex;
+  .banner .hero .title p {
+    font-size: 0.85rem;
+    color: #111111;
+    line-height: auto;
+    margin-top: 1.12rem;
+    text-align: center;
+  }
+
+  .banner .hero .title .hero_btn {
+    padding: 6px 24px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 1.12rem;
+  }
+
+  .banner .hero .title .enrol {
+    text-align: center;
   }
 }
