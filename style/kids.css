@@ -111,14 +111,12 @@ header {
 }
 
 /* banner section styles */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 section,
 .banner {
   margin-top: 1.25rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .banner .hero {
   display: flex;
@@ -159,6 +157,139 @@ section,
   margin-bottom: 1.25rem;
 }
 
+/* main styles start */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-image: url(../assets/bg.png);
+  background-image: linear-gradient(#ffffff, rgb(87, 66, 66));
+  width: 100%;
+  background-size: cover;
+  margin-top: 3.85rem;
+}
+main .stand {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
+/* standard curriculum section styles */
+.curriculum {
+  margin-top: 3.75rem;
+}
+
+.curriculum .curriculum_card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+/* kids_card styles */
+.curriculum .curriculum_card .kids_card {
+  background-color: #def5ff;
+  border-radius: 18px;
+  text-align: center;
+}
+.curriculum .curriculum_card .kids_card img {
+  margin-top: 40px;
+}
+
+.curriculum .curriculum_card .kids_card h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.curriculum .curriculum_card .kids_card p {
+  color: #808080;
+  font-weight: 500;
+  font-size: 15px;
+}
+.curriculum .curriculum_card .kids_card h4 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #64c8;
+}
+
+/* school_card styles */
+.curriculum .curriculum_card .school_card {
+  background-color: #fff4dc;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.curriculum .curriculum_card .school_card img {
+  margin-top: 40px;
+}
+.curriculum .curriculum_card .shool_card h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.curriculum .curriculum_card .school_card p {
+  color: #808080;
+  font-weight: 500;
+  font-size: 15px;
+}
+.curriculum .curriculum_card .school_card h4 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #f0aa00;
+}
+
+/* year card styles */
+.curriculum .curriculum_card .year_card {
+  background-color: #f2e8ff;
+  border-radius: 18px;
+  text-align: center;
+}
+.curriculum .curriculum_card .year_card img {
+  margin-top: 40px;
+}
+
+.curriculum .curriculum_card .year_card h1 {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.curriculum .curriculum_card .year_card p {
+  color: #808080;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.curriculum .curriculum_card .year_card h4 {
+  font-weight: 700;
+  font-size: 15px;
+  color: #8700ff;
+}
+
+/* angel bar styles */
+.angel {
+  text-align: center;
+  margin-top: 60px;
+  gap: 10px;
+}
+
+.angel .angel_1 {
+  background-color: #fea301;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.angel .angel_2 {
+  background-color: #fea301;
+  border-radius: 30px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+}
 /*~~~~~~ media query for mobile device responsive design ~~~~~~~*/
 @media screen and (max-width: 1024px) {
   .menubar {
@@ -167,11 +298,15 @@ section,
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    overflow: hidden;
+  }
   .menubar {
     display: block;
     top: 0;
     left: 0;
     /* margin-inline-end: -90%; */
+    /* padding: 3.75rem 5%; */
   }
   .inner_header > button {
     margin-left: 60%;
@@ -198,6 +333,11 @@ section,
     width: 390px;
     height: 70px;
     background-color: #fea301;
+  }
+
+  .banner {
+    padding: 0 auto;
+    overflow: hidden;
   }
 
   .banner,
@@ -240,5 +380,22 @@ section,
 
   .banner .hero .title .enrol {
     text-align: center;
+  }
+
+  main {
+    padding: 0 auto;
+    overflow-x: hidden;
+  }
+  main .stand {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+
+  .curriculum .curriculum_card {
+    flex-direction: column;
+  }
+  .angel {
+    display: none;
   }
 }
