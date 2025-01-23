@@ -304,11 +304,12 @@ main .stand {
 
 .children {
   margin-top: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .children .children_card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -358,8 +359,8 @@ main .stand {
 .children .children_card .kids {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 600px;
   height: 620px;
+  width: 600px;
   gap: 20px;
 }
 
@@ -491,14 +492,95 @@ main .stand {
   margin-left: 30px;
 }
 
+/* view button styles */
+
+.view {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.view_btn {
+  background-color: #111111;
+  border-radius: 0.75rem;
+  padding: 10px 10px;
+  width: 195px;
+  height: 3rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  border: none;
+}
+
+.view_btn:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+  background-color: burlywood;
+  color: black;
+}
+
+/* footer styles */
+.footer {
+  background-color: #01acfd;
+  margin-top: 60px;
+}
+
+.edu_kids {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+/* edu_icon styles */
+.edu_kids .edu_icon .edu_logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.edu_kids .edu_icon .edu_logo h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40px;
+}
+.edu_kids .edu_icon p {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+/* about_school styles */
+.edu_kids .about_school h4 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+}
+.edu_kids .about_school h5 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* touch styles */
+.edu_kids .touch {
+  margin-bottom: 200px;
+}
+.edu_kids .touch h3 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 26px;
+}
+
 /*~~~~~~ media query for mobile device responsive design ~~~~~~~*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
   .menubar {
     display: none;
   }
+  .children_card {
+    overflow: hidden;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   header {
     overflow: hidden;
   }
@@ -608,8 +690,21 @@ main .stand {
   }
 
   .children .children_card .kids {
-    width: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .view_btn {
+    text-align: center;
+  }
+  .view_btn:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    outline: none;
+    background-color: burlywood;
+    color: black;
+  }
+  .edu_kids {
+    flex-direction: column;
+    align-items: self-start;
   }
 }
