@@ -101,6 +101,12 @@ header {
   border: none;
   line-height: 1.75rem;
 }
+.btn:hover {
+  background-color: tomato;
+  cursor: pointer;
+  transition: 0.8s;
+  color: #000000;
+}
 
 .button .menubar {
   display: none;
@@ -157,6 +163,13 @@ section,
   font-size: 1.25rem;
   cursor: pointer;
   margin-bottom: 1.25rem;
+  border: none;
+}
+
+.banner .hero .title .enrol .hero_btn:hover {
+  background-color: goldenrod;
+  transition: 0.5s;
+  color: #000000;
 }
 
 /* main styles start */
@@ -283,6 +296,12 @@ main .stand {
   font-size: 24px;
 }
 
+.angel .angel_1:hover {
+  background-color: lightcoral;
+  transition: 0.5s;
+  color: #000000;
+}
+
 .angel .angel_2 {
   background-color: #fea301;
   border-radius: 30px;
@@ -292,7 +311,11 @@ main .stand {
   color: #ffffff;
   font-size: 24px;
 }
-
+.angel .angel_2:hover {
+  background-color: lightcoral;
+  transition: 0.5s;
+  color: #000000;
+}
 /* our stories styles */
 .stories {
   text-align: center;
@@ -340,6 +363,11 @@ main .stand {
   font-weight: 500;
   font-size: 15px;
   color: #ffffff;
+}
+.children .children_card .childhood .childhood_btn:hover {
+  background-color: pink;
+  transition: 0.5s;
+  color: black;
 }
 
 .children .children_card .childhood h3 {
@@ -389,6 +417,11 @@ main .stand {
   font-weight: 500;
   font-size: 15px;
 }
+.children .children_card .kids .card_1 .card_1_btn:hover {
+  background-color: peru;
+  color: #000000;
+  transition: 0.5s;
+}
 .children .children_card .kids .card_1 h5 {
   font-weight: 700;
   font-size: 15px;
@@ -420,6 +453,12 @@ main .stand {
   color: #ffffff;
   font-weight: 500;
   font-size: 15px;
+}
+
+.children .children_card .kids .card_2 .card_2_btn:hover {
+  background-color: green;
+  transition: 0.5s;
+  color: #000000;
 }
 .children .children_card .kids .card_2 h5 {
   font-weight: 700;
@@ -453,6 +492,12 @@ main .stand {
   font-weight: 500;
   font-size: 15px;
 }
+
+.children .children_card .kids .card_3 .card_3_btn:hover {
+  background-color: tomato;
+  color: #000000;
+  transition: 0.5s;
+}
 .children .children_card .kids .card_3 h5 {
   font-weight: 700;
   font-size: 15px;
@@ -484,6 +529,10 @@ main .stand {
   color: #ffffff;
   font-weight: 500;
   font-size: 15px;
+}
+.children .children_card .kids .card_4 .card_4_btn:hover {
+  background-color: brown;
+  transition: 0.5s;
 }
 .children .children_card .kids .card_4 h5 {
   font-weight: 700;
