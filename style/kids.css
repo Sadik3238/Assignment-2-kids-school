@@ -7,7 +7,6 @@ body {
   max-width: 1440px;
   background-color: #ffff;
   background-image: url(../assets/bg.png);
-  background-image: linear-gradient(#ffff, rgb(237, 203, 203));
 }
 
 /* common display flex */
